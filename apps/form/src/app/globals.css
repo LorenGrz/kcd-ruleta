@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "@openruleta/ui/theme.css";
+
+/* Tailwind v4 does not scan symlinked workspace packages by default. */
+@source "../../../../packages/ui/src";
+
+:root {
+  color-scheme: light;
+}
+
+/* The blue at the end of the gradient sits behind everything so no white shows
+   below the content or during mobile overscroll (this page is mobile-first). */
+html,
+body {
+  background-color: var(--color-primary-deep);
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.bg-brand-gradient {
+  background:
+    radial-gradient(
+      1200px 600px at 50% -10%,
+      rgba(37, 99, 235, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 15% 110%,
+      rgba(20, 184, 166, 0.2),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 85% 110%,
+      rgba(56, 189, 248, 0.2),
+      transparent 60%
+    ),
+    var(--color-primary-deep);
+}

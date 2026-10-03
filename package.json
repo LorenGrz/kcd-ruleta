@@ -1,0 +1,27 @@
+{
+  "name": "kcd-ruleta",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sorteo KCD Argentina 2026: formulario público + ruleta local (fork de OpenRuleta)",
+  "license": "MIT",
+  "packageManager": "pnpm@11.24.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @openruleta/form --filter @openruleta/ruleta dev",
+    "dev:form": "pnpm --filter @openruleta/form dev",
+    "dev:ruleta": "pnpm --filter @openruleta/ruleta dev",
+    "mock:reset": "node scripts/reset-mock-db.mjs",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9",
+    "eslint": "^9",
+    "prettier": "3.9.6",
+    "typescript": "^5",
+    "typescript-eslint": "^8"
+  }
+}
