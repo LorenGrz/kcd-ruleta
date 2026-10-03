@@ -14,7 +14,7 @@ datos:
 Basado en [OpenRuleta](https://github.com/LorenGrz/OpenRuleta) — este repo es
 el fork con marca y copys propios del evento.
 
-URL del formulario: _pendiente_.
+URL del formulario: **https://kcd-ruleta.vercel.app** · Supabase: proyecto `kcd-ruleta` (`xirutjshiqtnbnqtraab`, sa-east-1).
 
 ## Stack
 
@@ -92,10 +92,9 @@ pnpm dev:ruleta
 
 ## Próximos pasos
 
-- Desplegar `apps/form` en Vercel y completar la URL pendiente arriba.
-- Regenerar `apps/ruleta/public/poster.svg` (el QR del formulario) una vez
-  que el deploy tenga URL final.
-- Cargar el proyecto de Supabase real y correr `supabase/schema.sql`.
+- Pegar `SUPABASE_SERVICE_ROLE_KEY` en `apps/ruleta/.env.local` en la laptop del operador antes del sorteo.
+- Después del evento: exportar CSV de ganadores y pausar el proyecto de Supabase.
+- Regenerar el póster si cambia la URL: `pnpm --filter @openruleta/form poster <url>` y mover `apps/form/poster.png` a `apps/ruleta/public/poster.png`.
 
 ## Comandos
 

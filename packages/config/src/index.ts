@@ -209,7 +209,7 @@ export const siteConfig = defineSiteConfig({
   assets: {
     logo: "/logo.png",
     wheelLogo: "/logos/wheel-logo.png",
-    poster: "/poster.svg",
+    poster: "/poster.png",
   },
 
   form: {

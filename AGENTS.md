@@ -84,7 +84,7 @@ Replace the placeholder SVGs. The `assets.*` and `sponsors[].src` /
 | ---------------------------------------- | ---------------------------- | -------------------------------------------------- |
 | `assets.logo`                            | `apps/form/public/logo.svg`  | `apps/ruleta/public/logo.svg`                      |
 | `assets.wheelLogo`                       | —                            | `apps/ruleta/public/logos/wheel-logo.svg`          |
-| `assets.poster`                          | —                            | `apps/ruleta/public/poster.svg`                    |
+| `assets.poster`                          | —                            | `apps/ruleta/public/poster.png`                    |
 | `sponsors[].src` / `collaborators[].src` | `apps/form/public/logos/*`   | `apps/ruleta/public/logos/*` (only if shown there) |
 | favicon                                  | `apps/form/src/app/icon.svg` | `apps/ruleta/src/app/icon.svg` (if present)        |
 

@@ -72,3 +72,5 @@ Thumbs.db
 .idea/
 .vscode/*
 !.vscode/extensions.json
+.env*
+**/scripts/.poster.html
