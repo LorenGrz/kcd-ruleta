@@ -22,10 +22,14 @@ Current event setup:
 
 Live state:
 
-- Form deployed: https://kcd-ruleta.vercel.app (Vercel project `kcd-ruleta`,
-  Git-linked to `main`, root `apps/form`, functions in `gru1`).
+**Paused after the event (2026-10-05)** — both resources kept, nothing deleted:
+
+- Form: https://kcd-ruleta.vercel.app (Vercel project `kcd-ruleta`,
+  Git-linked to `main`, root `apps/form`, functions in `gru1`) — **paused**
+  (returns 503). Resume: `POST /v1/projects/{id}/unpause`.
 - Supabase project `kcd-ruleta` (`xirutjshiqtnbnqtraab`, sa-east-1) with
-  `supabase/schema.sql` applied.
+  `supabase/schema.sql` applied — **paused** (data kept; restore from the
+  dashboard).
 
 Known issues / pending:
 
